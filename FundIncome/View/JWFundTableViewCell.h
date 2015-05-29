@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface JWFundTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *fundNOLabel;
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numLabel;
 
 @end

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JWFundIncomeTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *fundNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *incomeLabel;
 
 @end

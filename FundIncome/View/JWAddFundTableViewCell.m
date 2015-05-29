@@ -19,5 +19,7 @@
 
     // Configure the view for the selected state
 }
-
+- (IBAction)addFund:(id)sender {
+    
+}
 @end
