@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JWFundIncomeTableViewController.h
 //  FundIncome
 //
 //  Created by jianwei on 15/5/29.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JWFundIncomeTableViewController : UITableViewController
 
 @end
-

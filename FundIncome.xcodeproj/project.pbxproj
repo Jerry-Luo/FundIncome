@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		E5E1CB291B183764002768FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB281B183764002768FE /* main.m */; };
 		E5E1CB2C1B183764002768FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB2B1B183764002768FE /* AppDelegate.m */; };
-		E5E1CB2F1B183764002768FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB2E1B183764002768FE /* ViewController.m */; };
 		E5E1CB321B183764002768FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E1CB301B183764002768FE /* Main.storyboard */; };
 		E5E1CB341B183764002768FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E1CB331B183764002768FE /* Images.xcassets */; };
 		E5E1CB371B183764002768FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E1CB351B183764002768FE /* LaunchScreen.xib */; };
 		E5E1CB431B183764002768FE /* FundIncomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB421B183764002768FE /* FundIncomeTests.m */; };
+		E5E1CB611B183F9B002768FE /* JWAddFundsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB5E1B183F9B002768FE /* JWAddFundsTableViewController.m */; };
+		E5E1CB621B183F9B002768FE /* JWFundIncomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB601B183F9B002768FE /* JWFundIncomeTableViewController.m */; };
+		E5E1CB651B1840AC002768FE /* JWFundIncomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB641B1840AC002768FE /* JWFundIncomeTableViewCell.m */; };
+		E5E1CB681B184154002768FE /* JWAddFundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB671B184154002768FE /* JWAddFundTableViewCell.m */; };
+		E5E1CB6B1B18416B002768FE /* JWFundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB6A1B18416B002768FE /* JWFundTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,22 @@
 		E5E1CB281B183764002768FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5E1CB2A1B183764002768FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5E1CB2B1B183764002768FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5E1CB2D1B183764002768FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E5E1CB2E1B183764002768FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E5E1CB311B183764002768FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5E1CB331B183764002768FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E5E1CB361B183764002768FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E5E1CB3C1B183764002768FE /* FundIncomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundIncomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E1CB411B183764002768FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E1CB421B183764002768FE /* FundIncomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FundIncomeTests.m; sourceTree = "<group>"; };
+		E5E1CB5D1B183F9B002768FE /* JWAddFundsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAddFundsTableViewController.h; sourceTree = "<group>"; };
+		E5E1CB5E1B183F9B002768FE /* JWAddFundsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAddFundsTableViewController.m; sourceTree = "<group>"; };
+		E5E1CB5F1B183F9B002768FE /* JWFundIncomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFundIncomeTableViewController.h; sourceTree = "<group>"; };
+		E5E1CB601B183F9B002768FE /* JWFundIncomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFundIncomeTableViewController.m; sourceTree = "<group>"; };
+		E5E1CB631B1840AC002768FE /* JWFundIncomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFundIncomeTableViewCell.h; sourceTree = "<group>"; };
+		E5E1CB641B1840AC002768FE /* JWFundIncomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFundIncomeTableViewCell.m; sourceTree = "<group>"; };
+		E5E1CB661B184154002768FE /* JWAddFundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWAddFundTableViewCell.h; sourceTree = "<group>"; };
+		E5E1CB671B184154002768FE /* JWAddFundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWAddFundTableViewCell.m; sourceTree = "<group>"; };
+		E5E1CB691B18416B002768FE /* JWFundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFundTableViewCell.h; sourceTree = "<group>"; };
+		E5E1CB6A1B18416B002768FE /* JWFundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFundTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +93,11 @@
 		E5E1CB251B183764002768FE /* FundIncome */ = {
 			isa = PBXGroup;
 			children = (
-				E5E1CB2A1B183764002768FE /* AppDelegate.h */,
-				E5E1CB2B1B183764002768FE /* AppDelegate.m */,
-				E5E1CB2D1B183764002768FE /* ViewController.h */,
-				E5E1CB2E1B183764002768FE /* ViewController.m */,
+				E5E1CB571B183A6C002768FE /* Model */,
+				E5E1CB5C1B183F9B002768FE /* Controller */,
+				E5E1CB5B1B183F4B002768FE /* View */,
 				E5E1CB301B183764002768FE /* Main.storyboard */,
 				E5E1CB331B183764002768FE /* Images.xcassets */,
-				E5E1CB351B183764002768FE /* LaunchScreen.xib */,
 				E5E1CB261B183764002768FE /* Supporting Files */,
 			);
 			path = FundIncome;
@@ -96,6 +106,9 @@
 		E5E1CB261B183764002768FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5E1CB2A1B183764002768FE /* AppDelegate.h */,
+				E5E1CB2B1B183764002768FE /* AppDelegate.m */,
+				E5E1CB351B183764002768FE /* LaunchScreen.xib */,
 				E5E1CB271B183764002768FE /* Info.plist */,
 				E5E1CB281B183764002768FE /* main.m */,
 			);
@@ -117,6 +130,37 @@
 				E5E1CB411B183764002768FE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5E1CB571B183A6C002768FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5E1CB5B1B183F4B002768FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1CB631B1840AC002768FE /* JWFundIncomeTableViewCell.h */,
+				E5E1CB641B1840AC002768FE /* JWFundIncomeTableViewCell.m */,
+				E5E1CB661B184154002768FE /* JWAddFundTableViewCell.h */,
+				E5E1CB671B184154002768FE /* JWAddFundTableViewCell.m */,
+				E5E1CB691B18416B002768FE /* JWFundTableViewCell.h */,
+				E5E1CB6A1B18416B002768FE /* JWFundTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5E1CB5C1B183F9B002768FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1CB5D1B183F9B002768FE /* JWAddFundsTableViewController.h */,
+				E5E1CB5E1B183F9B002768FE /* JWAddFundsTableViewController.m */,
+				E5E1CB5F1B183F9B002768FE /* JWFundIncomeTableViewController.h */,
+				E5E1CB601B183F9B002768FE /* JWFundIncomeTableViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E1CB2F1B183764002768FE /* ViewController.m in Sources */,
+				E5E1CB621B183F9B002768FE /* JWFundIncomeTableViewController.m in Sources */,
+				E5E1CB681B184154002768FE /* JWAddFundTableViewCell.m in Sources */,
 				E5E1CB2C1B183764002768FE /* AppDelegate.m in Sources */,
+				E5E1CB611B183F9B002768FE /* JWAddFundsTableViewController.m in Sources */,
+				E5E1CB6B1B18416B002768FE /* JWFundTableViewCell.m in Sources */,
 				E5E1CB291B183764002768FE /* main.m in Sources */,
+				E5E1CB651B1840AC002768FE /* JWFundIncomeTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FundIncome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FundIncome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
