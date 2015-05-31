@@ -18,7 +18,7 @@
 "DVO-mw-fcr.text" = "123123";
 
 /* Class = "UIButton"; normalTitle = "添 加"; ObjectID = "Fgv-RO-hmJ"; */
-"Fgv-RO-hmJ.normalTitle" = "添 加";
+"Fgv-RO-hmJ.normalTitle" = "确 定";
 
 /* Class = "UINavigationItem"; title = "基金收益"; ObjectID = "IT8-cv-1jb"; */
 "IT8-cv-1jb.title" = "基金收益";

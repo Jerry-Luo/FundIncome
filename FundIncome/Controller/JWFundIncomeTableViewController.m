@@ -11,7 +11,7 @@
 #import "JWFundIncomeTableViewCell.h"
 #import "FundDetailModel.h"
 #import "UIViewController+ApplyBackgroundImageOfNavBar.h"
-
+#define DARKGREEN [UIColor colorWithRed:49/255.0 green:144/255.0 blue:67/255.0 alpha:1]
 @interface JWFundIncomeTableViewController ()
 @property(strong, nonatomic) NSArray *fundDetails;
 @property(strong, nonatomic) NSTimer *timer;
@@ -54,7 +54,7 @@
                 if (benifit>0) {
                     self.benefitLabel.textColor = [UIColor redColor];
                 }else{
-                    self.benefitLabel.textColor = [UIColor greenColor];
+                    self.benefitLabel.textColor = DARKGREEN;
                 }
                 [self.tableView reloadData];
             });
@@ -91,7 +91,7 @@
         cell.incomeLabel.textColor = [UIColor redColor];
         cell.mood.image = [UIImage imageNamed:@"delight"];
     }else{
-        cell.incomeLabel.textColor = [UIColor greenColor];
+        cell.incomeLabel.textColor = DARKGREEN;
         cell.mood.image = [UIImage imageNamed:@"sad"];
     }
     return cell;

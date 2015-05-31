@@ -9,13 +9,12 @@
 #import "FundDetailModel.h"
 #import "NSObject+JWLObjDicConvert.h"
 #import "AFNetworking.h"
-#import "FundModel.h"
 #import "FundWebServiceResp.h"
 @implementation Fund
 
 +(double)fundIncome:(FundDetailModel*)fundDetailModel{
-    double invest = [fundDetailModel.fundModel.amount doubleValue];
-    double num = [fundDetailModel.fundModel.num doubleValue];
+    double invest = [[fundDetailModel.fundModel valueForKey:@"amount"] doubleValue];
+    double num = [[fundDetailModel.fundModel valueForKey:@"num"] doubleValue];
     double gsz = [fundDetailModel.gsz doubleValue];
     return num * gsz - invest;
 }
@@ -23,7 +22,7 @@
 +(double)totalAsset:(NSArray*)array{
     double sum = 0;
     for (FundDetailModel *m in array) {
-        double num = [m.fundModel.num doubleValue];
+        double num = [[m.fundModel valueForKey:@"num"] doubleValue];
         double gsz = [m.gsz doubleValue];
         sum += (num * gsz);
     }
@@ -33,21 +32,21 @@
 +(double)fundAmount{
     NSArray *arr = [self userFunds];
     double sum = 0;
-    for (FundModel *m in arr) {
-        sum += [m.amount doubleValue];
+    for (NSDictionary *m in arr) {
+        sum += [[m valueForKey:@"amount"] doubleValue];
     }
     return sum;
 }
 
 +(void)syncUserFunds:(NSArray*)funds
 {
-    NSMutableArray *array = [NSMutableArray array];
-    for (FundModel *fund in funds) {
-        NSDictionary *dic = @{@"fundNO":fund.fundNO,@"amount":fund.amount,@"num":fund.num};
-        [array addObject:dic];
-    }
+//    NSMutableArray *array = [NSMutableArray array];
+//    for (FundModel *fund in funds) {
+//        NSDictionary *dic = @{@"fundNO":fund.fundNO,@"amount":fund.amount,@"num":fund.num};
+//        [array addObject:dic];
+//    }
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:array forKey:fundsKey];
+    [userDefaults setObject:funds forKey:fundsKey];
     [userDefaults synchronize];
 }
 
@@ -55,15 +54,16 @@
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSArray *array = [userDefaults arrayForKey:fundsKey];
-    NSMutableArray *funds = [NSMutableArray array];
-    for (NSDictionary *dic in array) {
-        FundModel *m = [[FundModel alloc]init];
-        m.fundNO = [dic valueForKey:@"fundNO"];
-        m.amount = [dic valueForKey:@"amount"];
-        m.num = [dic valueForKey:@"num"];
-        [funds addObject:m];
-    }
-    return funds;
+//    NSMutableArray *funds = [NSMutableArray array];
+//    for (NSDictionary *dic in array) {
+//        FundModel *m = [[FundModel alloc]init];
+//        m.fundNO = [dic valueForKey:@"fundNO"];
+//        m.amount = [dic valueForKey:@"amount"];
+//        m.num = [dic valueForKey:@"num"];
+//        [funds addObject:m];
+//    }
+//    return funds;
+    return array;
 }
 
 +(void)requestFundsFromWebservice:(FetchFundsSuccess)success failed:(FetchFundsFailed)failure finish:(Finish)finish
@@ -96,9 +96,9 @@
 
 +(void)addFundModel:(NSArray*)array{
     NSArray *arr = [self userFunds];
-    for (FundModel *m in arr) {
+    for (NSDictionary *m in arr) {
         for (FundDetailModel *dm in array) {
-            if ([dm.fundcode isEqualToString:m.fundNO]) {
+            if ([dm.fundcode isEqualToString:[m valueForKey:@"fundNO"]]) {
                 dm.fundModel = m;
             }
         }
@@ -108,8 +108,8 @@
 +(NSString *)fc{
     NSArray *arr = [self userFunds];
     NSMutableString *fc = [NSMutableString string];
-    for (FundModel *m in arr) {
-        [fc appendString:m.fundNO];
+    for (NSDictionary *m in arr) {
+        [fc appendString:[m valueForKey:@"fundNO"]];
         [fc appendString:@","];
     }
     return [fc length]?[fc substringToIndex:[fc length]-1]:nil;

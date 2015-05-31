@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FundModel.h"
 @protocol FundDetailModel<NSObject>
 @end
 @interface FundDetailModel : NSObject
@@ -28,5 +27,5 @@
 @property (strong, nonatomic) NSString *isgz;
 @property (strong, nonatomic) NSString *isbuy;
 @property (strong, nonatomic) NSString *nkfr;
-@property (strong, nonatomic) FundModel *fundModel;
+@property (strong, nonatomic) NSDictionary *fundModel;
 @end

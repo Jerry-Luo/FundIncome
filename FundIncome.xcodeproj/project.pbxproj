@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F4619AADFE8C969C8108F92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6E75D6587822895A983036 /* libPods.a */; };
 		E51E3B711B18ACE900161F94 /* FundWebServiceResp.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E3B701B18ACE900161F94 /* FundWebServiceResp.m */; };
-		E51E3B741B18BA5100161F94 /* FundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E3B731B18BA5100161F94 /* FundModel.m */; };
 		E5B0634C1B1A684700B68E29 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5B0634B1B1A684700B68E29 /* Info.plist */; };
 		E5B247871B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B247861B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m */; };
 		E5B247901B1A5FA300DF9575 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5B247921B1A5FA300DF9575 /* Localizable.strings */; };
@@ -45,8 +44,6 @@
 		C4A11BEE38E55880D5A88E00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E51E3B6F1B18ACE900161F94 /* FundWebServiceResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundWebServiceResp.h; sourceTree = "<group>"; };
 		E51E3B701B18ACE900161F94 /* FundWebServiceResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundWebServiceResp.m; sourceTree = "<group>"; };
-		E51E3B721B18BA5100161F94 /* FundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundModel.h; sourceTree = "<group>"; };
-		E51E3B731B18BA5100161F94 /* FundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundModel.m; sourceTree = "<group>"; };
 		E5B0634B1B1A684700B68E29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B247851B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ApplyBackgroundImageOfNavBar.h"; sourceTree = "<group>"; };
 		E5B247861B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ApplyBackgroundImageOfNavBar.m"; sourceTree = "<group>"; };
@@ -190,8 +187,6 @@
 			children = (
 				E5E1CB6C1B186BE1002768FE /* Fund.h */,
 				E5E1CB6D1B186BE1002768FE /* Fund.m */,
-				E51E3B721B18BA5100161F94 /* FundModel.h */,
-				E51E3B731B18BA5100161F94 /* FundModel.m */,
 				E5E1CB6F1B186F0D002768FE /* FundDetailModel.h */,
 				E5E1CB701B186F0D002768FE /* FundDetailModel.m */,
 				E51E3B6F1B18ACE900161F94 /* FundWebServiceResp.h */,
@@ -372,7 +367,6 @@
 				E5E1CB681B184154002768FE /* JWAddFundTableViewCell.m in Sources */,
 				E5E1CB711B186F0D002768FE /* FundDetailModel.m in Sources */,
 				E5E1CB2C1B183764002768FE /* AppDelegate.m in Sources */,
-				E51E3B741B18BA5100161F94 /* FundModel.m in Sources */,
 				E5E1CB611B183F9B002768FE /* JWAddFundsTableViewController.m in Sources */,
 				E5E1CB6E1B186BE1002768FE /* Fund.m in Sources */,
 				E5E1CB741B187047002768FE /* NSObject+JWLObjDicConvert.m in Sources */,
