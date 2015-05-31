@@ -11,5 +11,6 @@
 @interface JWFundIncomeTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *fundNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *incomeLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *mood;
 
 @end

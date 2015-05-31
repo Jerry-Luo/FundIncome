@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FundModel : NSObject
+@interface FundModel : NSObject<NSCopying>
 @property (weak, nonatomic) NSString *fundNO;
 @property (weak, nonatomic) NSString *amount;
 @property (weak, nonatomic) NSString *num;

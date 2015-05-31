@@ -10,6 +10,9 @@
 		4F4619AADFE8C969C8108F92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6E75D6587822895A983036 /* libPods.a */; };
 		E51E3B711B18ACE900161F94 /* FundWebServiceResp.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E3B701B18ACE900161F94 /* FundWebServiceResp.m */; };
 		E51E3B741B18BA5100161F94 /* FundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E3B731B18BA5100161F94 /* FundModel.m */; };
+		E5B0634C1B1A684700B68E29 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5B0634B1B1A684700B68E29 /* Info.plist */; };
+		E5B247871B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B247861B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m */; };
+		E5B247901B1A5FA300DF9575 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5B247921B1A5FA300DF9575 /* Localizable.strings */; };
 		E5E1CB291B183764002768FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB281B183764002768FE /* main.m */; };
 		E5E1CB2C1B183764002768FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1CB2B1B183764002768FE /* AppDelegate.m */; };
 		E5E1CB321B183764002768FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E1CB301B183764002768FE /* Main.storyboard */; };
@@ -44,8 +47,18 @@
 		E51E3B701B18ACE900161F94 /* FundWebServiceResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundWebServiceResp.m; sourceTree = "<group>"; };
 		E51E3B721B18BA5100161F94 /* FundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundModel.h; sourceTree = "<group>"; };
 		E51E3B731B18BA5100161F94 /* FundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundModel.m; sourceTree = "<group>"; };
+		E5B0634B1B1A684700B68E29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B247851B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ApplyBackgroundImageOfNavBar.h"; sourceTree = "<group>"; };
+		E5B247861B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ApplyBackgroundImageOfNavBar.m"; sourceTree = "<group>"; };
+		E5B247881B1A5A4800DF9575 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		E5B247891B1A5A4800DF9575 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E5B2478A1B1A5DDF00DF9575 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		E5B2478B1B1A5DDF00DF9575 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E5B247911B1A5FA300DF9575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E5B247931B1A5FC600DF9575 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E5B247941B1A5FC700DF9575 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E5B247951B1A5FC900DF9575 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E5E1CB231B183764002768FE /* FundIncome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundIncome.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5E1CB271B183764002768FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5E1CB281B183764002768FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E5E1CB2A1B183764002768FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5E1CB2B1B183764002768FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,10 +158,11 @@
 		E5E1CB261B183764002768FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5B247921B1A5FA300DF9575 /* Localizable.strings */,
+				E5B0634B1B1A684700B68E29 /* Info.plist */,
 				E5E1CB2A1B183764002768FE /* AppDelegate.h */,
 				E5E1CB2B1B183764002768FE /* AppDelegate.m */,
 				E5E1CB351B183764002768FE /* LaunchScreen.xib */,
-				E5E1CB271B183764002768FE /* Info.plist */,
 				E5E1CB281B183764002768FE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -208,6 +222,8 @@
 				E5E1CB5E1B183F9B002768FE /* JWAddFundsTableViewController.m */,
 				E5E1CB5F1B183F9B002768FE /* JWFundIncomeTableViewController.h */,
 				E5E1CB601B183F9B002768FE /* JWFundIncomeTableViewController.m */,
+				E5B247851B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.h */,
+				E5B247861B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,6 +279,7 @@
 				TargetAttributes = {
 					E5E1CB221B183764002768FE = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 6Y6PJDEC8X;
 					};
 					E5E1CB3B1B183764002768FE = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -277,6 +294,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				fr,
 			);
 			mainGroup = E5E1CB1A1B183764002768FE;
 			productRefGroup = E5E1CB241B183764002768FE /* Products */;
@@ -295,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5E1CB321B183764002768FE /* Main.storyboard in Resources */,
+				E5B247901B1A5FA300DF9575 /* Localizable.strings in Resources */,
 				E5E1CB371B183764002768FE /* LaunchScreen.xib in Resources */,
+				E5B0634C1B1A684700B68E29 /* Info.plist in Resources */,
 				E5E1CB341B183764002768FE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +376,7 @@
 				E5E1CB611B183F9B002768FE /* JWAddFundsTableViewController.m in Sources */,
 				E5E1CB6E1B186BE1002768FE /* Fund.m in Sources */,
 				E5E1CB741B187047002768FE /* NSObject+JWLObjDicConvert.m in Sources */,
+				E5B247871B1A55C300DF9575 /* UIViewController+ApplyBackgroundImageOfNavBar.m in Sources */,
 				E51E3B711B18ACE900161F94 /* FundWebServiceResp.m in Sources */,
 				E5E1CB6B1B18416B002768FE /* JWFundTableViewCell.m in Sources */,
 				E5E1CB291B183764002768FE /* main.m in Sources */,
@@ -381,10 +403,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E5B247921B1A5FA300DF9575 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5B247911B1A5FA300DF9575 /* Base */,
+				E5B247931B1A5FC600DF9575 /* en */,
+				E5B247941B1A5FC700DF9575 /* zh-Hans */,
+				E5B247951B1A5FC900DF9575 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = SOURCE_ROOT;
+		};
 		E5E1CB301B183764002768FE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E5E1CB311B183764002768FE /* Base */,
+				E5B247881B1A5A4800DF9575 /* zh-Hans */,
+				E5B2478A1B1A5DDF00DF9575 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -393,6 +428,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E5E1CB361B183764002768FE /* Base */,
+				E5B247891B1A5A4800DF9575 /* zh-Hans */,
+				E5B2478B1B1A5DDF00DF9575 /* fr */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -436,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -473,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -485,10 +522,14 @@
 			baseConfigurationReference = 10660ADB3A107350C50B4030 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: China Mobile Group Zhejiang Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FundIncome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -497,10 +538,14 @@
 			baseConfigurationReference = C4A11BEE38E55880D5A88E00 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: China Mobile Group Zhejiang Co., Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FundIncome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

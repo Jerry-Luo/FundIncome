@@ -12,7 +12,7 @@
 @interface Fund : NSObject
 typedef void(^FetchFundsSuccess)(NSArray *array);
 typedef void(^FetchFundsFailed)();
-
+typedef void(^Finish)();
 /**
  *  同步用户基金
  *
@@ -32,7 +32,7 @@ typedef void(^FetchFundsFailed)();
  *
  *  @param updateUI 根据获取的基金信息更新UI的block
  */
-+(void)requestFundsFromWebservice:(FetchFundsSuccess)success failed:(FetchFundsFailed)failed;
++(void)requestFundsFromWebservice:(FetchFundsSuccess)success failed:(FetchFundsFailed)failed finish:(Finish)finish;
 
 /**
  *  获取用户投入的基金总金额

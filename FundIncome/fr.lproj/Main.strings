@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "持有份额："; ObjectID = "1xp-gM-1IS"; */
+"1xp-gM-1IS.text" = "持有份额：";
+
+/* Class = "UILabel"; text = "基金代号："; ObjectID = "1xy-Cc-hkP"; */
+"1xy-Cc-hkP.text" = "基金代号：";
+
+/* Class = "UILabel"; text = "123123"; ObjectID = "5L4-Bh-NgE"; */
+"5L4-Bh-NgE.text" = "123123";
+
+/* Class = "UIBarButtonItem"; title = "完成"; ObjectID = "8kq-K7-erJ"; */
+"8kq-K7-erJ.title" = "完成";
+
+/* Class = "UILabel"; text = "投入金额："; ObjectID = "DMe-l9-JJH"; */
+"DMe-l9-JJH.text" = "投入金额：";
+
+/* Class = "UILabel"; text = "123123"; ObjectID = "DVO-mw-fcr"; */
+"DVO-mw-fcr.text" = "123123";
+
+/* Class = "UIButton"; normalTitle = "添 加"; ObjectID = "Fgv-RO-hmJ"; */
+"Fgv-RO-hmJ.normalTitle" = "添 加";
+
+/* Class = "UINavigationItem"; title = "基金收益"; ObjectID = "IT8-cv-1jb"; */
+"IT8-cv-1jb.title" = "基金收益";
+
+/* Class = "UILabel"; text = "123123"; ObjectID = "IW9-lg-mVd"; */
+"IW9-lg-mVd.text" = "123123";
+
+/* Class = "UINavigationItem"; title = "添加持有基金"; ObjectID = "bOa-gw-7bh"; */
+"bOa-gw-7bh.title" = "添加持有基金";
+
+/* Class = "UILabel"; text = "共盈利："; ObjectID = "cuw-d5-Vt0"; */
+"cuw-d5-Vt0.text" = "共盈利：";
+
+/* Class = "UILabel"; text = "4500"; ObjectID = "fsy-ZF-OXK"; */
+"fsy-ZF-OXK.text" = "0";
+
+/* Class = "UILabel"; text = "3.68"; ObjectID = "hK5-Bw-Lxy"; */
+"hK5-Bw-Lxy.text" = "3.68";
+
+/* Class = "UILabel"; text = "基金名称"; ObjectID = "l31-31-Sk8"; */
+"l31-31-Sk8.text" = "基金名称";
+
+/* Class = "UILabel"; text = "共投入："; ObjectID = "mFo-rT-OpL"; */
+"mFo-rT-OpL.text" = "共投入：";
+
+/* Class = "UILabel"; text = "300"; ObjectID = "yhd-sM-Sdv"; */
+"yhd-sM-Sdv.text" = "0";

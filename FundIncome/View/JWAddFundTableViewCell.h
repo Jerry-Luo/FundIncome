@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *fundNOTextview;
 @property (weak, nonatomic) IBOutlet UITextField *amountTextview;
 @property (weak, nonatomic) IBOutlet UITextField *numTextview;
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
 
 @end

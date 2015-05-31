@@ -66,24 +66,32 @@
     return funds;
 }
 
-+(void)requestFundsFromWebservice:(FetchFundsSuccess)success failed:(FetchFundsFailed)failure
++(void)requestFundsFromWebservice:(FetchFundsSuccess)success failed:(FetchFundsFailed)failure finish:(Finish)finish
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer=[AFHTTPResponseSerializer serializer];
-    NSDictionary *param = @{@"pstart":@"0",@"psize":@"1000",@"fc":[self fc],@"t":@"kf",@"dt":[NSString stringWithFormat:@"%.0f",[NSDate date].timeIntervalSince1970]};
-    
-    [manager GET:@"http://fundex2.eastmoney.com/FundWebServices/MyFavorInformation.aspx" parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        id resp = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-        NSLog(@"JSON: %@", resp);
-        NSDictionary *dic = @{@"funds":resp};
-        FundWebServiceResp *r = [FundWebServiceResp initWithDic:dic];
-        [self addFundModel:r.funds];
-        success(r.funds);
+    NSString *str = [self fc];
+    if ([str length]) {
+        NSDictionary *param = @{@"pstart":@"0",@"psize":@"1000",@"fc":str,@"t":@"kf",@"dt":[NSString stringWithFormat:@"%.0f",[NSDate date].timeIntervalSince1970]};
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-        failure();
-    }];
+        [manager GET:@"http://fundex2.eastmoney.com/FundWebServices/MyFavorInformation.aspx" parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            id resp = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+            NSLog(@"JSON: %@", resp);
+            NSDictionary *dic = @{@"funds":resp};
+            FundWebServiceResp *r = [FundWebServiceResp initWithDic:dic];
+            [self addFundModel:r.funds];
+            success(r.funds);
+            finish();
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+            failure();
+            finish();
+        }];
+
+    }else{
+        finish();
+    }
 }
 
 +(void)addFundModel:(NSArray*)array{
@@ -104,7 +112,7 @@
         [fc appendString:m.fundNO];
         [fc appendString:@","];
     }
-    return [fc substringToIndex:[fc length]-1];
+    return [fc length]?[fc substringToIndex:[fc length]-1]:nil;
 }
 
 @end
