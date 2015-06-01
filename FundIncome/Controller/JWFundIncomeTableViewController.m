@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalInLabel;
 @property (weak, nonatomic) IBOutlet UILabel *benefitLabel;
 @property (weak, nonatomic) IBOutlet UILabel *actualProfit;
+@property (weak, nonatomic) IBOutlet UILabel *todayBenifit;
 @end
 
 @implementation JWFundIncomeTableViewController
@@ -51,11 +52,15 @@
                 double allIn = [Fund fundAmount];
                 double benifit = [Fund totalAsset:self.fundDetails]-allIn;
                 double actualBenifit = [Fund actualAsset:self.fundDetails]-allIn;
+                double todayBenifit = benifit - actualBenifit;
                 self.totalInLabel.text = [NSString stringWithFormat:@"%.2f",allIn];
                 self.benefitLabel.text = [NSString stringWithFormat:@"%.2f",benifit];
                 self.actualProfit.text = [NSString stringWithFormat:@"%.2f",actualBenifit];
+                self.todayBenifit.text = [NSString stringWithFormat:@"%.2f",todayBenifit];
+                
                 self.benefitLabel.textColor = [Fund colorWithBenifit:benifit];
                 self.actualProfit.textColor = [Fund colorWithBenifit:actualBenifit];
+                self.todayBenifit.textColor = [Fund colorWithBenifit:todayBenifit];
                 
                 [self.tableView reloadData];
             });
