@@ -12,6 +12,14 @@
 #import "FundWebServiceResp.h"
 @implementation Fund
 
++(UIColor*)colorWithBenifit:(double)benifit{
+    if (benifit>0) {
+        return [UIColor redColor];
+    }else{
+        return [UIColor colorWithRed:49/255.0 green:144/255.0 blue:67/255.0 alpha:1];
+    }
+}
+
 +(double)fundIncome:(FundDetailModel*)fundDetailModel{
     double invest = [[fundDetailModel.fundModel valueForKey:@"amount"] doubleValue];
     double num = [[fundDetailModel.fundModel valueForKey:@"num"] doubleValue];
@@ -24,6 +32,16 @@
     for (FundDetailModel *m in array) {
         double num = [[m.fundModel valueForKey:@"num"] doubleValue];
         double gsz = [m.gsz doubleValue];
+        sum += (num * gsz);
+    }
+    return sum;
+}
+
++(double)actualAsset:(NSArray*)array{
+    double sum = 0;
+    for (FundDetailModel *m in array) {
+        double num = [[m.fundModel valueForKey:@"num"] doubleValue];
+        double gsz = [m.dwjz doubleValue];
         sum += (num * gsz);
     }
     return sum;

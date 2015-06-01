@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FundDetailModel.h"
+#import <UIKit/UIKit.h>
 #define fundsKey @"funds"
 @interface Fund : NSObject
 typedef void(^FetchFundsSuccess)(NSArray *array);
@@ -42,11 +43,22 @@ typedef void(^Finish)();
 +(double)fundAmount;
 
 /**
- *  计算用户的总资产
+ *  估算用户的总资产
  *
- *  @return 用户的总资产
+ *  @param array 网络获取的用户持有基金详情
+ *
+ *  @return 估算出的总资产
  */
 +(double)totalAsset:(NSArray*)array;
+
+/**
+ *  截至昨日的实际总资产
+ *
+ *  @param array 网络获取的用户持有基金详情
+ *
+ *  @return 计算出的截至昨日的实际资产
+ */
++(double)actualAsset:(NSArray*)array;
 
 /**
  *  计算某个基金的收益
@@ -56,4 +68,13 @@ typedef void(^Finish)();
  *  @return 指定基金的收益
  */
 +(double)fundIncome:(FundDetailModel*)fundDetailModel;
+
+/**
+ *  <#Description#>
+ *
+ *  @param benifit <#benifit description#>
+ *
+ *  @return <#return value description#>
+ */
++(UIColor*)colorWithBenifit:(double)benifit;
 @end

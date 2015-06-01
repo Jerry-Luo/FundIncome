@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8E174E7F-09EE-4037-89AD-5D87DF61040C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FundIncome</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D976A3640599B8B8F26A8EDC75F86D683708C6B0</key>
+		<string>https://github.com/BigHub/FundIncome.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FundIncome.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D976A3640599B8B8F26A8EDC75F86D683708C6B0</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BigHub/FundIncome.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D976A3640599B8B8F26A8EDC75F86D683708C6B0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D976A3640599B8B8F26A8EDC75F86D683708C6B0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FundIncome</string>
+		</dict>
+	</array>
+</dict>
+</plist>

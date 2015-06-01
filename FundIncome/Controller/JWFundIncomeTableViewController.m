@@ -18,6 +18,7 @@
 @property(assign, nonatomic) BOOL viewJustAppear;
 @property (weak, nonatomic) IBOutlet UILabel *totalInLabel;
 @property (weak, nonatomic) IBOutlet UILabel *benefitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *actualProfit;
 @end
 
 @implementation JWFundIncomeTableViewController
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     self.viewJustAppear = YES;
     self.refreshControl = [[UIRefreshControl alloc]init];
-//    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:NSLocalizedString(@"PULL_UPDATE", @"下拉刷新")];
+//  self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:NSLocalizedString(@"PULL_UPDATE", @"下拉刷新")];
     [self.refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
 }
 
@@ -49,13 +50,13 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 double allIn = [Fund fundAmount];
                 double benifit = [Fund totalAsset:self.fundDetails]-allIn;
+                double actualBenifit = [Fund actualAsset:self.fundDetails]-allIn;
                 self.totalInLabel.text = [NSString stringWithFormat:@"%.2f",allIn];
                 self.benefitLabel.text = [NSString stringWithFormat:@"%.2f",benifit];
-                if (benifit>0) {
-                    self.benefitLabel.textColor = [UIColor redColor];
-                }else{
-                    self.benefitLabel.textColor = DARKGREEN;
-                }
+                self.actualProfit.text = [NSString stringWithFormat:@"%.2f",actualBenifit];
+                self.benefitLabel.textColor = [Fund colorWithBenifit:benifit];
+                self.actualProfit.textColor = [Fund colorWithBenifit:actualBenifit];
+                
                 [self.tableView reloadData];
             });
         } failed:^{
