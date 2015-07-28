@@ -91,8 +91,9 @@
     NSString *str = [self fc];
     if ([str length]) {
         NSDictionary *param = @{@"pstart":@"0",@"psize":@"1000",@"fc":str,@"t":@"kf",@"dt":[NSString stringWithFormat:@"%.0f",[NSDate date].timeIntervalSince1970]};
-        
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         [manager GET:@"http://fundex2.eastmoney.com/FundWebServices/MyFavorInformation.aspx" parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             id resp = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
             NSLog(@"JSON: %@", resp);
             NSDictionary *dic = @{@"funds":resp};
@@ -102,6 +103,7 @@
             finish();
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
             NSLog(@"Error: %@", error);
             failure();
             finish();
